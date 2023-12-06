@@ -1,6 +1,6 @@
 import { getInput } from "../inputs/get-input";
 
-const lines = getInput("day2.txt");
+const lines = getInput("day2.txt", true);
 
 type ColorKey = "red" | "green" | "blue";
 

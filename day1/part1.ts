@@ -1,6 +1,6 @@
 import { getInput } from "../inputs/get-input";
 
-const lines = getInput("day1.txt");
+const lines = getInput("day1.txt", true);
 
 let totalSum = 0;
 

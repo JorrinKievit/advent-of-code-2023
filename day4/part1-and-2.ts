@@ -1,6 +1,6 @@
 import { getInput } from "../inputs/get-input";
 
-const lines = getInput("day4.txt");
+const lines = getInput("day4.txt", true);
 
 let totalAmount = 0;
 const cardInstances: { count: number; matches: number }[] = [];

@@ -1,6 +1,6 @@
 import { getInput } from "../inputs/get-input";
 
-const lines = getInput("day3.txt");
+const lines = getInput("day3.txt", true);
 
 type Symbol = {
 	text: string;

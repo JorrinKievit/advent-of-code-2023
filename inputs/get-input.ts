@@ -30,6 +30,12 @@ type Days =
 type FileNames = `day${Days}`;
 type FileNamesWithExtension = `${FileNames}.txt` | "test.txt";
 
-export const getInput = (name: FileNamesWithExtension): string[] => {
-	return readFileSync(`${__dirname}\\${name}`, "utf-8").split("\n");
+export const getInput = <T extends boolean>(
+	name: FileNamesWithExtension,
+	shoudSplit: T,
+): T extends true ? string[] : string => {
+	const data = readFileSync(`./inputs/${name}`, "utf-8");
+	return (shoudSplit ? data.split("\n") : data) as T extends true
+		? string[]
+		: string;
 };

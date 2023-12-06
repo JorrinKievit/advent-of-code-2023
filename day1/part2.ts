@@ -13,7 +13,7 @@ const VALID_STRING_NUMBERS: Record<string, string> = {
 	nine: "9",
 };
 
-const lines = getInput("day1.txt");
+const lines = getInput("day1.txt", true);
 
 const totalSum = lines
 	.map((line) => {
